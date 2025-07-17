@@ -31,14 +31,11 @@
 
   <!-- Hero Section -->
   <section class="h-screen flex flex-col items-center justify-center text-center px-6">
-    <!-- 3D Shirt Embed from Spline -->
-    <div class="w-full h-[300px] md:h-[450px] lg:h-[500px] mb-8 rounded-2xl overflow-hidden shadow-xl card-3d transition-all duration-700 ease-in-out">
-      <iframe src="https://my.spline.design/your-3d-shirt-scene" frameborder="0" width="100%" height="100%"></iframe>
+    <div class="w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 mb-8 overflow-hidden rounded-2xl shadow-2xl card-3d transition-all duration-700 ease-in-out">
+      <img src="https://via.placeholder.com/600x600.png?text=Your+Shirt+Here" alt="Shirt Image" class="object-cover w-full h-full" />
     </div>
-
     <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">Wear The Future</h1>
     <p class="text-gray-400 mt-4 text-lg md:text-xl">Modern shirts for modern souls.</p>
-
     <a href="#shop" class="mt-6 inline-block px-6 py-3 text-black bg-white rounded-full font-medium text-lg hover:scale-105 transition-all">
       Shop Now
     </a>
@@ -47,27 +44,65 @@
   <!-- Shop Section -->
   <section id="shop" class="py-20 px-6 bg-gray-900 text-white">
     <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Our Collection</h2>
-
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
-      <!-- Shirt Card 1 -->
-      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300">
-        <img src="https://via.placeholder.com/400x400.png?text=Shirt+1" alt="Shirt 1" class="rounded-lg mb-4">
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Shirt+1" class="rounded-lg mb-4">
         <h3 class="text-xl font-semibold">Urban Black Tee</h3>
         <p class="text-gray-400 mt-2">$24.99</p>
       </div>
-
-      <!-- Shirt Card 2 -->
-      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300">
-        <img src="https://via.placeholder.com/400x400.png?text=Shirt+2" alt="Shirt 2" class="rounded-lg mb-4">
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Shirt+2" class="rounded-lg mb-4">
         <h3 class="text-xl font-semibold">Cyber White Tee</h3>
         <p class="text-gray-400 mt-2">$22.99</p>
       </div>
-
-      <!-- Shirt Card 3 -->
-      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300">
-        <img src="https://via.placeholder.com/400x400.png?text=Shirt+3" alt="Shirt 3" class="rounded-lg mb-4">
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Shirt+3" class="rounded-lg mb-4">
         <h3 class="text-xl font-semibold">Neon Glow Tee</h3>
         <p class="text-gray-400 mt-2">$27.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Premium Section -->
+  <section id="premium" class="py-20 px-6 bg-gradient-to-r from-gray-900 to-black text-white">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Premium Collection</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-[#1a1a1a] rounded-xl overflow-hidden p-6 border border-yellow-400 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Premium+1" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-yellow-400">Golden Stitch Tee</h3>
+        <p class="text-gray-400 mt-2">$49.99</p>
+      </div>
+      <div class="bg-[#1a1a1a] rounded-xl overflow-hidden p-6 border border-yellow-400 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Premium+2" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-yellow-400">Royal Silk Tee</h3>
+        <p class="text-gray-400 mt-2">$59.99</p>
+      </div>
+      <div class="bg-[#1a1a1a] rounded-xl overflow-hidden p-6 border border-yellow-400 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Premium+3" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold text-yellow-400">Midnight Luxe Tee</h3>
+        <p class="text-gray-400 mt-2">$54.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Latest Section -->
+  <section id="latest" class="py-20 px-6 bg-gray-950 text-white">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Latest Drops</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=New+1" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Streetwear Skull Tee</h3>
+        <p class="text-gray-400 mt-2">New Arrival — $29.99</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=New+2" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Limited Space Tee</h3>
+        <p class="text-gray-400 mt-2">New Arrival — $31.99</p>
+      </div>
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=New+3" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">MonoShadow Tee</h3>
+        <p class="text-gray-400 mt-2">Just Dropped — $28.99</p>
       </div>
     </div>
   </section>

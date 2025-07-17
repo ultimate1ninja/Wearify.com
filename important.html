@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wear The Future</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body::before {
+      content: '';
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: radial-gradient(ellipse at top left, rgba(255,255,255,0.05), transparent),
+                  radial-gradient(ellipse at bottom right, rgba(255,255,255,0.05), transparent);
+      z-index: -1;
+      animation: moveBG 15s infinite alternate;
+    }
+
+    @keyframes moveBG {
+      0% { transform: translate(0px, 0px); }
+      100% { transform: translate(20px, -20px); }
+    }
+
+    .card-3d:hover {
+      transform: perspective(800px) rotateY(10deg) rotateX(4deg) scale(1.02);
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+  <!-- Hero Section -->
+  <section class="h-screen flex flex-col items-center justify-center text-center px-6">
+    <!-- 3D Shirt Embed from Spline -->
+    <div class="w-full h-[300px] md:h-[450px] lg:h-[500px] mb-8 rounded-2xl overflow-hidden shadow-xl card-3d transition-all duration-700 ease-in-out">
+      <iframe src="https://my.spline.design/your-3d-shirt-scene" frameborder="0" width="100%" height="100%"></iframe>
+    </div>
+
+    <h1 class="text-5xl md:text-6xl font-extrabold tracking-tight">Wear The Future</h1>
+    <p class="text-gray-400 mt-4 text-lg md:text-xl">Modern shirts for modern souls.</p>
+
+    <a href="#shop" class="mt-6 inline-block px-6 py-3 text-black bg-white rounded-full font-medium text-lg hover:scale-105 transition-all">
+      Shop Now
+    </a>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop" class="py-20 px-6 bg-gray-900 text-white">
+    <h2 class="text-4xl md:text-5xl font-bold text-center mb-12">Our Collection</h2>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+      <!-- Shirt Card 1 -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Shirt+1" alt="Shirt 1" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Urban Black Tee</h3>
+        <p class="text-gray-400 mt-2">$24.99</p>
+      </div>
+
+      <!-- Shirt Card 2 -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Shirt+2" alt="Shirt 2" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Cyber White Tee</h3>
+        <p class="text-gray-400 mt-2">$22.99</p>
+      </div>
+
+      <!-- Shirt Card 3 -->
+      <div class="bg-gray-800 rounded-xl overflow-hidden p-6 transform hover:scale-105 transition-all duration-300">
+        <img src="https://via.placeholder.com/400x400.png?text=Shirt+3" alt="Shirt 3" class="rounded-lg mb-4">
+        <h3 class="text-xl font-semibold">Neon Glow Tee</h3>
+        <p class="text-gray-400 mt-2">$27.99</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 text-center text-gray-500 bg-black">
+    &copy; 2025 Wear The Future. All rights reserved.
+  </footer>
+</body>
+</html>
